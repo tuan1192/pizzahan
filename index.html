@@ -1,3 +1,561 @@
-Đây là Pizza Hân</br>
-Anh Tuấn vừa cấu hình xong cho Hân rùi naz :">
-ssssssssssssssssssssssss
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Blog Design by Pizza Han</title>
+        <meta name="description" content="HTML5 Personal Blog Magazine Style Template">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Your Name">
+
+        <!-- FONTS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/linea-icomoon.css">
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'>
+        
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        <link rel="icon" type="img/png" href="img/favicon_32x32.jpg">
+
+        <script src="js/vendor/modernizr.js"></script>
+
+    </head>
+    <body>
+
+        <!-- Preloader -->
+        <div class="preloader flex flex-middle">
+            <img src="img/svg/cube.svg" class="preloader-cubes" alt="Loading..." />
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-default navbar-fixed-top is-transparent" role="navigation">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo4.png"></a>
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav" role="menubar">
+                        <li role="menuitem"><a href="index.html">Home</a></li>
+                        <li role="menuitem"><a href="about.html">About Me</a></li>
+                        <li role="menuitem"><a href="contact.html">Contact</a></li>
+                        <li class="dropdown" role="menuitem">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Pages <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li role="menuitem"><a href="post-leftsidebar.html">Left Sidebar</a></li>
+                                <li role="menuitem"><a href="post-rightsidebar.html">Right Sidebar</a></li>
+                                <li role="menuitem"><a href="post-centered.html">Centered Post</a></li>
+                                <li role="menuitem"><a href="404.html">Page 404</a></li>
+                                <li role="menuitem"><a href="comingsoon.html">Coming Soon</a></li>
+                                <li role="menuitem"><a href="shortcodes.html">Shortcodes</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="#share-popup" class="iconized open-popup-link" data-toggle="tooltip" data-placement="bottom" title="Share"><i class="icon icon-share"></i></a>
+                            <!-- Popup Content -->
+                            <div id="share-popup" class="full-popup mfp-hide">
+                                <article class="share">
+                                    <h3 class="snserif">Share this page</h3>
+                                    <ul class="social-list">
+                                        <li><a href="#" class="fa fa-facebook"></a></li>
+                                        <li><a href="#" class="fa fa-twitter"></a></li>
+                                        <li><a href="#" class="fa fa-pinterest"></a></li>
+                                        <li><a href="#" class="fa fa-google-plus"></a></li>
+                                        <li><a href="#" class="fa fa-tumblr"></a></li>
+                                        <li><a href="#" class="fa fa-linkedin"></a></li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#search-popup" class="iconized open-popup-link" data-toggle="tooltip" data-placement="bottom" title="Search"><i class="icon icon-magnifier"></i></a>
+                            <!-- Popup Content -->
+                            <div id="search-popup" class="full-popup mfp-hide">
+                                <article class="search">
+                                    <div class="container">
+                                        <div class="row">
+                                            <h3 class="snserif">Search</h3>
+                                            <div class="input-group col-md-4 col-md-offset-4">
+                                                <input type="text" class="form-control" placeholder="Type and press enter to search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+
+        <!-- Header -->
+        <header class="header hero flex flex-middle" role="banner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="h__hello__banner">
+                            <h1>HELLO! I'M PIZZA HAN</h1>
+                            <h4 class="snserif">Here is a blog site to share knowledge about designs</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Content -->
+        <main class="main" role="main">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Filter -->
+                        <ul id="filter" class="filter">
+                            <li><a data-filter="*" class="btn btn-filter" role="button" data-text="All">All</a></li>
+                            <li><a data-filter=".Knowledge" class="btn btn-filter" role="button" data-text="Knowledge">Knowledge</a></li>
+                            <li><a data-filter=".inspiration" class="btn btn-filter" role="button" data-text="Inspired">Inspired</a></li>
+                            <li><a data-filter=".Uxui" class="btn btn-filter" role="button" data-text="UX/UI Design">UX/UI Design</a></li>
+                            <li><a data-filter=".photography" class="btn btn-filter" role="button" data-text="My Product">My Product</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Masonry -->
+                <section class="masonry">
+                    <div class="grid-sizer"></div>
+                    <div class="gutter-sizer"></div>
+                    
+                    <div class="item Knowledge" data-category="Knowledge">
+                        <article class="post">
+                            <figure class="figure rectangle">
+                                <div class="img-trigger">
+                                    <img src="img/ux__ui/yeutocobancuamotthietke.jpg" alt="img" />
+                                </div>
+                                <a href="nhung-yeu-to-co-ban-cua-mot-thiet-ke.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="nhung-yeu-to-co-ban-cua-mot-thiet-ke.html">Những yếu tố cơ bản của một thiết kế</a></h4>
+                                <h6 class="category">Knowledge</h6>
+                                <p>Công việc thiết kế ngoài việc truyền cảm hứng hay mang lại một ý tưởng tuyệt vời, nó còn liên quan tới việc hiểu các nguyên tắc cơ bản của một vấn đề. Xác định được các nguyên tắc này chính là cách mà chúng ta thành công trong việc tạo ra một tác phẩm nghệ thuật...</p>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item Knowledge" data-category="Knowledge">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/Knowledge/ten-khong-dau_thumb-284x187.jpg" alt="img" />
+                                </div>
+                                <a href="lam-the-nao-de-co-viec-lam-dau-tien-khi-vua-tot-nghiep.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="lam-the-nao-de-co-viec-lam-dau-tien-khi-vua-tot-nghiep.html">Làm thế nào để có việc làm đầu tiên khi vừa tốt nghiệp </a></h4>
+                                <h6 class="category">Knowledge</h6>
+                                <p>Theo một cuộc điều tra thăm dò ý kiến gần đây của The Creative Group...</p>
+                            </section>
+                        </article>
+                    </div>
+
+                    <div class="item inspiration" data-category="inspiration">
+                        <article class="post">
+                            <figure class="figure rectangle-big">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Skate shadow</a></h4>
+                                <h6 class="category">Inspiration</h6>
+                                <p>Theo một cuộc điều tra thăm dò ý kiến gần đây của The Creative Group...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item Uxui" data-category="Uxui">
+                        <article class="post">
+                            <figure class="figure rectangle">
+                                <div class="img-trigger">
+                                    <img src="img/ux__ui/ui-ux-designer.jpg" alt="img" />
+                                </div>
+                                <a href="cac-nha-ux-ui-design-thuong-lam-nhung-gi.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="cac-nha-ux-ui-design-thuong-lam-nhung-gi.html">Các nhà thiết kế UX – UI thường làm những gì?</a></h4>
+                                <h6 class="category">UX/UI Design</h6>
+                                <p>Lần đầu đọc khái niệm ‘UX/UI’ (trải nghiệm người dùng / giao diện người dùng), tôi đã nhận ra rằng nó gần như là một phần công việc tôi đã làm trong ngần ấy năm mà chẳng qua tôi không biết....</p>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item Uxui" data-category="Uxui">
+                        <article class="post">
+                            <figure class="figure rectangle">
+                                <div class="img-trigger">
+                                    <img src="img/ux__ui/UserExperience.jpg" alt="img" />
+                                </div>
+                                <a href="xu-huong-thiet-ke-ux-nam-2016.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="xu-huong-thiet-ke-ux-nam-2016.html">Xu hướng Thiết kế UX năm 2016 (Phần 1)</a></h4>
+                                <h6 class="category">UX/UI Design</h6>
+                                <p>Có thể 2015 là năm bạn bắt đầu thêm các từ thông dụng như “UX” vào hồ sơ Linkedin của bạn – nhưng vẫn dành nhiều thời gian để làm tăng pixel trên màn ảnh. Nếu trường hợp này...</p>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item photography" data-category="photography">
+                        <article class="post">
+                            <figure class="figure rectangle">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Dark beauty</a></h4>
+                                <h6 class="category">Photography</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item Knowledge" data-category="Knowledge">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/Knowledge/sac_thai_thumb-284x187.png" alt="img" />
+                                </div>
+                                <a href="su-dung-mau-sac-font-chu-va-khoang-cach-tao-sac-thai-trong-thiet-ke-cua-ban.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="su-dung-mau-sac-font-chu-va-khoang-cach-tao-sac-thai-trong-thiet-ke-cua-ban.html">Sử dụng màu sắc, font chữ và khoảng cách tạo sắc thái trong thiết kế của bạn</a></h4>
+                                <h6 class="category">Knowledge</h6>
+                                <p>Thiết kế cho phép người sử dụng tương tác với thương hiệu, sản phẩm, thông điệp hoặc ý tưởng. Nhưng làm cách nào một thiết kế lôi cuốn được chúng ta? Màu sắc? Một headline thông minh dùng một font chữ lôi cuốn...</p>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item Knowledge" data-category="Knowledge">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/Knowledge/ten-khong-dau_thumb1-284x187.jpg" alt="img" />
+                                </div>
+                                <a href="10-cong-cu-moi-giup-kham-pha-tiem-nang-sang-tao.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="10-cong-cu-moi-giup-kham-pha-tiem-nang-sang-tao.html">10 công cụ mới giúp khai phá tiềm năng sáng tạo trong bạn</a></h4>
+                                <h6 class="category">Knowledge</h6>
+                                <p>Dù bạn đang làm bất kì ngành nghề nào trong lĩnh vực sáng tạo, những công cụ mới dưới đây sẽ giúp bạn giải phóng tối đa sức mạnh của trí tưởng tượng....</p>
+                            </section>
+                        </article>
+                    </div>
+
+                    <div class="item inspiration" data-category="inspiration">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">In the square</a></h4>
+                                <h6 class="category">Inspiration</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item Knowledge" data-category="Knowledge">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/Knowledge/rgb_ung_dung_sac_do_sang_va_sac_do_toi_vao_thiet_ke_thumb-284x187.png" alt="img" />
+                                </div>
+                                <a href="ung-dung-do-sg-do-toi-trong-thiet-ke.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="ung-dung-do-sg-do-toi-trong-thiet-ke.html">Ứng dụng sắc độ sáng và sắc độ tối vào thiết kế</a></h4>
+                                <h6 class="category">Knowledge</h6>
+                                <p>Đã đến giai đoạn cuối trong công việc nhưng vẫn còn bước cuối khiến bạn bối rối: Chọn cách phối màu...</p>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item Knowledge" data-category="Knowledge">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/Knowledge/creative_agency_freelance_promote-284x176.jpg" alt="img" />
+                                </div>
+                                <a href="10-dieu-cac-agency-thiet-ke-va-design-nen-tu-hoi-khi-quang-cao-ban-than.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="10-dieu-cac-agency-thiet-ke-va-design-nen-tu-hoi-khi-quang-cao-ban-than.html">[Infographic] 10 điều các agency thiết kế và designers nên tự hỏi khi “quảng cáo” bản thân</a></h4>
+                                <h6 class="category">Knowledge</h6>
+                                <p>Các agency thiết kế và designers cần lưu ý những điều gì khi “quảng cáo” bản thân nào? ...</p>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item Uxui" data-category="Uxui">
+                        <article class="post">
+                            <figure class="figure rectangle">
+                                <div class="img-trigger">
+                                    <img src="img/ux__ui/nen-va-khong-nen-284x187.jpg" alt="img" />
+                                </div>
+                                <a href="nhung-dieu-nen-va-khong-nen-khi-thiet-ke-ui.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="nhung-dieu-nen-va-khong-nen-khi-thiet-ke-ui.html">Những điều nên và không nên khi thiết kế UI</a></h4>
+                                <h6 class="category">UX/UI Design</h6>
+                                <p>iOS nâng thiết kế giao diện người dùng lên một tầm cao mới và đem tới cho bạn nhiều cơ hội để tạo ra ...</p>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item Uxui" data-category="Uxui">
+                        <article class="post">
+                            <figure class="figure rectangle">
+                                <div class="img-trigger">
+                                    <img src="img/ux__ui/happy-ux-happy-ui.png" alt="img" />
+                                </div>
+                                <a href="hieu-ve-trai-nghiem-nguoi-dung-ux-va-giao-dien-ui.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="hieu-ve-trai-nghiem-nguoi-dung-ux-va-giao-dien-ui.html">Hiểu về trải nghiệm người dùng (UX) và giao diện (UI)</a></h4>
+                                <h6 class="category">UX/UI Design</h6>
+                                <p>Trong thời gian gần đây chúng ta được nghe nhắc rất nhiều đến cụm từ trải nghiệm người dùng(user experience - UX). Tuy nhiên, nhiều người vẫn còn nhầm lẫn đây chính là giao diện người dùng(user interface - UI), là thứ mà chúng ta vẫn...</p>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item photography" data-category="photography">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Safe with style</a></h4>
+                                <h6 class="category">Photography</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item Knowledge" data-category="Knowledge">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/Knowledge/7-bi-kip-thiet-ke-thuyet-trinh-thu-hut-khach-hang_thumb-284x187.png" alt="img" />
+                                </div>
+                                <a href="7-bi-kip-thiet-ke-thuyet-trinh-thu-hut-khach-hang.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="7-bi-kip-thiet-ke-thuyet-trinh-thu-hut-khach-hang.html">7 bí kíp thiết kế thuyết trình thu hút khách hàng</a></h4>
+                                <h6 class="category">Knowledge</h6>
+                                <p>Khi bạn cần các sản phẩm đồ hoạ, logo, website và thậm chí áo thun đều không còn là điều mới lạ. Tuy nhiên vẫn còn những thứ khác ảnh hưởng đến nhận diện thương hiệu của bạn và cần được thiết kế tốt...</p>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item Knowledge" data-category="Knowledge">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/Knowledge/1_rgb_creative_design_trend_xu_huong_thiet_ke_2016-284x176.jpg" alt="img" />
+                                </div>
+                                <a href="xu-huong-thiet-ke-thong-tri-2016.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="xu-huong-thiet-ke-thong-tri-2016.html">Xu hướng thiết kế nào thống trị 2016?</a></h4>
+                                <h6 class="category">Knowledge</h6>
+                                <p>Không còn những dự đoán, chúng ta đã đi được nửa chặng đường của năm 2016, và những xu hướng thiết kế này đang năm ngôi vương trong các tác phẩm thiết kế của nhiều designer...</p>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item adventure" data-category="adventure">
+                        <article class="post">
+                            <figure class="figure rectangle">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Bottles battle</a></h4>
+                                <h6 class="category">Adventure</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item Knowledge" data-category="Knowledge">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/Knowledge/RGB.vn_uu-khuyet-diem-va-tuong-lai-cua-thiet-ke-phang_thumbnail-279x187.jpg" alt="img" />
+                                </div>
+                                <a href="uu-khuyet-diem-va-tuong-lai-cua-thiet-ke-phang.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="uu-khuyet-diem-va-tuong-lai-cua-thiet-ke-phang.html">Ưu, khuyết điểm và tương lai của thiết kế phẳng</a></h4>
+                                <h6 class="category">Knowledge</h6>
+                                <p>Có thể bạn đã từng nghe qua những lời ca tụng về thiết kế phẳng trên nhiều blog...</p>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item adventure" data-category="adventure">
+                        <article class="post">
+                            <figure class="figure rectangle-big">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Flight around coast</a></h4>
+                                <h6 class="category">Adventure</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item Knowledge" data-category="Knowledge">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/Knowledge/tylevang.jpg" alt="img" />
+                                </div>
+                                <a href="ty-le-vang-nhung-dieu-can-biet-ve-cach-su-dung.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="ty-le-vang-nhung-dieu-can-biet-ve-cach-su-dung.html">Tỉ lệ vàng – Những điều cần biết và cách áp dụng vào thiết kế của bạn</a></h4>
+                                <h6 class="category">Knowledge</h6>
+                                <p>Câu trả lời nhanh! Tất cả đều được thiết kế dựa trên Tỉ lệ vàng. Tỉ lệ vàng là một tỉ lệ toán học. Nó được tìm thấy trong thiên nhiên...</p>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item Knowledge" data-category="Knowledge">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/Knowledge/thumb-284x187.jpg" alt="img" />
+                                </div>
+                                <a href="11-dieu-truong-thiet-ke-khong-dy-bn.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="11-dieu-truong-thiet-ke-khong-dy-bn.html">11 điều trường thiết kế không dạy bạn</a></h4>
+                                <h6 class="category">Knowledge</h6>
+                                <p>Các nhà sáng tạo hàng đầu thế giới tiết lộ về những điều mà họ ước phải chi đã biết trước khi đang còn ngồi tại giảng đường đại học và bật mí cho bạn cách để...</p>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item inspiration" data-category="inspiration">
+                        <article class="post">
+                            <figure class="figure rectangle">
+                                <div class="img-trigger">
+                                    <img src="img/placeholder.jpg" alt="img" />
+                                </div>
+                                <a href="post-centered.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="post-centered.html">Say something</a></h4>
+                                <h6 class="category">Inspiration</h6>
+                                <p>Competently extend distributed web through interdependent...</p>
+                                <span class="meta comments">6 Comments</span>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item Knowledge" data-category="Knowledge">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/Knowledge/Untitled-1-284x187.jpg" alt="img" />
+                                </div>
+                                <a href="50-dieu-thiet-ke-sinh-vien-nen-biet.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="50-dieu-thiet-ke-sinh-vien-nen-biet.html">50 điều thiết kế sinh viên nên biết</a></h4>
+                                <h6 class="category">Knowledge</h6>
+                                <p>Jamie Wiek đã liệt kê ra 50 điều mà các sinh viên thiết kế cần phải biết trước khi tốt nghiệp đại học...</p>
+                            </section>
+                        </article>
+                    </div>
+                    <div class="item Knowledge" data-category="Knowledge">
+                        <article class="post">
+                            <figure class="figure square">
+                                <div class="img-trigger">
+                                    <img src="img/Knowledge/thumbailseo2016-small-280x187.jpg" alt="img" />
+                                </div>
+                                <a href="13-dieu-nen-biet-ve-seo-nam-2016-cho-nha-thiet-ke-web.html" class="overlay-link"></a>
+                            </figure>
+                            <section class="post-content">
+                                <h4 class="post-title"><a href="13-dieu-nen-biet-ve-seo-nam-2016-cho-nha-thiet-ke-web.html">13 Điều nên biết về SEO năm 2016 dành cho nhà thiết kế web</a></h4>
+                                <h6 class="category">Knowledge</h6>
+                                <p>Thiết kế website và SEO gần như song hành với nhau trong thời đại tiến tiên hiện nay. Đẹp không vẫn là chưa đủ để có thể dành chiến thắng với thứ hạng cao trên bảng xếp hạng...</p>
+                            </section>
+                        </article>
+                    </div>
+                </section><!-- /.masonry -->
+                <!-- Pagination -->
+                <nav class="content-nav">
+                    <ul class="pager">
+                        <li class="disabled"><a href="page2.html">Older</a></li>
+                        <li><a href="page2.html">Newer</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- Scroll top icon-square_up-->
+            <a class="scroll-top icon icon-arrow-up"></a>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer" role="contentinfo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <p>&copy; 2016 Blog Design, All Rights Reserved, Made with <i class="fa fa-wrench"></i> by <a href="http://filiponline.tk/" target="_blank">Pizza Han</a></p>
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <ul class="social-list">
+                            <li><a href="#" class="fa fa-facebook"></a></li>
+                            <li><a href="#" class="fa fa-twitter"></a></li>
+                            <li><a href="#" class="fa fa-pinterest"></a></li>
+                            <li><a href="#" class="fa fa-flickr"></a></li>
+                            <li><a href="#" class="fa fa-dribbble"></a></li>
+                            <li><a href="#" class="fa fa-behance"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        
+        <script src="js/vendor/jquery.appear.js"></script>
+        <script src="js/vendor/imagesloaded.pkgd.min.js"></script>
+        <script src="js/vendor/isotope.pkgd.min.js"></script>
+        <script src="js/vendor/jquery.infinitescroll.min.js"></script>
+        <script src="js/vendor/slick.min.js"></script>
+        <script src="js/vendor/jquery.tweet.min.js"></script>
+        <script src="js/vendor/jquery.magnific-popup.min.js"></script>
+
+        <script src="js/main.js"></script>
+    
+    </body>
+</html>
