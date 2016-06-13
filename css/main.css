@@ -332,6 +332,10 @@ img.full-width {
 .is-transparent.navbar-default .navbar-nav > li > a:not(.button) {
   color: #000;
 }
+.is-transparent.navbar-default .navbar-nav > li > a > i{
+  font-size: 20px;
+  font-weight: 600;
+}
 .is-transparent.navbar-default .navbar-toggle {
   color: #fff;
 }
@@ -368,6 +372,13 @@ img.full-width {
 .search .form-control {
   text-align: center;
 }
+.navbar-default .navbar-nav>li>a{
+  padding-top: 21px;
+}
+.navbar-default .navbar-nav>li>a >i{
+  font-size: 20px;
+  font-weight: 600;
+}
 /* Social List
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .social-list {
@@ -386,6 +397,9 @@ img.full-width {
 .social-list li > a {
   display: block;
   color: inherit;
+}
+.social-list li > a:hover{
+  color: #333;
 }
 /* Header
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
