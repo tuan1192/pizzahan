@@ -296,7 +296,7 @@ img.full-width {
 /* Navbar
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .navbar-brand>img{
-  height: 35px;
+  height: 33px;
 }
 .navbar-default .navbar-nav > li > a:not(.iconized){
     padding-top: 23px;
@@ -431,6 +431,11 @@ img.full-width {
   padding: 50px;
   color: #333;
   position: relative;
+}
+.header.hero .h__hello__banner img{
+    clear: both;
+    display: initial;
+    height: 70px;
 }
 .header.hero .h__hello__banner:after{
     z-index: 1;
