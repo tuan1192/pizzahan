@@ -192,106 +192,12 @@
                                 <li><a href="#" class="btn btn-default btn-xs">Fashion</a></li>
                             </ul>
                         </article>
+
                         <!-- Comments -->
-                        <article class="comments">
-                            <h4>3 Comments</h4>
-                            <ul class="comments-list">
-                                <li>
-                                    <a href="#" class="avatar"><img src="img/avatars/avatar1.jpg" alt="avatar"></a>
-                                    <div class="comment">
-                                        <h6><a href="#" class="author">John McClane</a></h6>
-                                        <ul class="meta-list">
-                                            <li><time class="meta">November 23, 2014</time></li>
-                                            <li><time class="meta" data-text="At">6:35 pm</time></li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda mollitia saepe rem libero?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fusce nec mollis odio. Quisque vel enim malesuada, euismod felis ut, rhoncus magna.</p>
-                                        <a href="#" class="btn btn-default btn-sm">Reply</a>
-                                    </div>
-                                    <ul>
-                                        <li>
-                                            <a href="#" class="avatar"><img src="img/avatars/avatar2.jpg" alt="avatar"></a>
-                                            <div class="comment">
-                                                <h6><a href="#" class="author">Patricia Graham</a></h6>
-                                                <ul class="meta-list">
-                                                    <li><time class="meta">November 23, 2014</time></li>
-                                                    <li><time class="meta" data-text="At">6:35 pm</time></li>
-                                                </ul>
-                                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda mollitia saepe rem libero?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fusce nec mollis odio. Quisque vel enim malesuada, euismod felis ut, rhoncus magna.</p>
-                                                <a href="#" class="btn btn-default btn-sm">Reply</a>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#" class="avatar"><img src="img/avatars/avatar3.jpg" alt="avatar"></a>
-                                    <div class="comment">
-                                        <h6><a href="#" class="author">Daniel Willis</a></h6>
-                                        <ul class="meta-list">
-                                            <li><time class="meta">November 23, 2014</time></li>
-                                            <li><time class="meta" data-text="At">6:35 pm</time></li>
-                                        </ul>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda mollitia saepe rem libero?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fusce nec mollis odio. Quisque vel enim malesuada, euismod felis ut, rhoncus magna.</p>
-                                        <a href="#" class="btn btn-default btn-sm">Reply</a>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="row">
-                                <div class="col-md-8">
-                                    <div class="leave-reply">
-                                        <button id="comment-fade" class="btn btn-default">Leave a Reply</button>
-                                        <form action="php/contact-form.php" id="reply-form" class="reply-form">
-                                            <div class="alert alert-success hidden" id="contact-alert-success">
-                                                <strong>Success!</strong> Thank you for your message. Reply will be in a while!
-                                            </div>
-                                            <div class="alert alert-danger hidden" id="contact-alert-error">
-                                                <strong>Error!</strong> Something went wrong sending your message.
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="sr-only" for="name"></label>
-                                                <input type="text" class="form-control" value="" placeholder="Name" data-msg-required="Please enter your name." name="name" id="name">
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="sr-only" for="email"></label>
-                                                <input type="email" value="" placeholder="E-mail" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." class="form-control" name="email" id="email">
-                                            </div>
-                                            <div class="form-group">
-                                                <label class="sr-only" for="message"></label>
-                                                <textarea placeholder="Enter your message..." data-msg-required="Please enter your message." rows="6" class="form-control" name="message" id="message"></textarea>
-                                            </div>
-                                            <input type="submit" value="Send Message" class="btn btn-default" data-loading-text="Loading...">
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                            
+                        <article>
+                            <div class="fb-comments" data-href="http://pizzahan.top/10-cong-cu-moi-giup-kham-pha-tiem-nang-sang-tao.html" data-width="100%" data-numposts="10"></div>
                         </article>
-                        <!-- Pagination -->
-                        <nav class="blog-nav">
-                            <ul class="block-pagination" role="menubar" aria-label="Pagination">
-                                <li class="previous">
-                                    <a href="#">
-                                        <span class="hidden-xs">Previous article</span>
-                                        <span class="visible-xs">Previous</span>
-                                        <hgroup class="hgroup hidden-xs">
-                                            <h5 class="post-title"><small>Bottles battle</small></h5>
-                                            <h6 class="category"><small>Adventure</small></h6>
-                                        </hgroup>
-                                        <i class="fa fa-angle-left"></i>
-                                    </a>
-                                </li>
-                                <li class="next">
-                                    <a href="#">
-                                        <span class="hidden-xs">Next article</span>
-                                        <span class="visible-xs">Next</span>
-                                        <hgroup class="hgroup hidden-xs">
-                                            <h5 class="post-title"><small>Flight around coast</small></h5>
-                                            <h6 class="category"><small>Adventure</small></h6>
-                                        </hgroup>
-                                        <i class="fa fa-angle-right"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </nav>
+                        <!-- And comment -->
                     </div>
                 </div>
             </div>
@@ -319,6 +225,15 @@
                 </div>
             </div>
         </footer>
+        
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.6";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
         
         <!-- Scripts
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
