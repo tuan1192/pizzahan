@@ -334,7 +334,7 @@ img.full-width {
 }
 .is-transparent.navbar-default .navbar-nav > li > a > i{
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 200;
 }
 .is-transparent.navbar-default .navbar-toggle {
   color: #fff;
@@ -375,9 +375,12 @@ img.full-width {
 .navbar-default .navbar-nav>li>a{
   padding-top: 21px;
 }
+.navbar-default .navbar-nav>li>a:focus{
+  outline: none;
+}
 .navbar-default .navbar-nav>li>a >i{
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 200;
 }
 /* Social List
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
