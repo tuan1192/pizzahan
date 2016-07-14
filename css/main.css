@@ -768,8 +768,9 @@ img.full-width {
   font-family: "Source Sans Pro", "Lucida Grande", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 }
 .post-title a {
-  color: inherit;
-  font-size: 14px;
+  color: #111;
+  font-size: 18px;
+  font-weight: 800;
 }
 .item .post {
   margin: 0;
