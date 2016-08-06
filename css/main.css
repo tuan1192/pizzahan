@@ -496,7 +496,7 @@ img.full-width {
   position: relative;
   width: 100%;
   height: auto;
-  padding: 3em 0;
+  padding: 2em 0;
 }
 #infscr-loading {
   position: fixed;
@@ -644,6 +644,10 @@ img.full-width {
 .filter li {
   display: inline-block;
 }
+.filter li a.active{
+  color: #333;
+  font-weight: 600;
+}
 .filter label {
   position: relative;
   display: none;
@@ -768,10 +772,17 @@ img.full-width {
   font-family: "Source Sans Pro", "Lucida Grande", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 }
 .post-title a {
-  color: #111;
-  font-size: 18px;
-  font-weight: 800;
+  color: #333;
+  font-size: 17px;
+  font-weight: 700;
   line-height: 24px;
+}
+.post-title a:hover{
+  color: #00AECC;
+  transition: ease-in 0.2s;
+    -moz-transition: ease-in 0.2s;
+    -webkit-transition: ease-in 0.2s;
+    -o-transition: ease-in 0.2s;
 }
 .item .post {
   margin: 0;
@@ -783,6 +794,12 @@ img.full-width {
 .item .post-content {
   text-align: center;
   padding: 1em 6%;
+  border: 1px solid #f1f1f1;
+  border-bottom-width: 3px;
+  border-color: #f1f1f1;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background-color: #f9f9f9;
 }
 .item .post-content p {
   font-size: 14px;
@@ -1796,6 +1813,7 @@ fieldset[disabled] .btn-link:focus {
   color: #333;
   background-color: #fff;
   border-color: transparent;
+  font-size: 15px;
 }
 .btn-filter::after {
   content: attr(data-text);
@@ -1819,9 +1837,8 @@ fieldset[disabled] .btn-link:focus {
 .btn-filter:active,
 .btn-filter.active,
 .open > .dropdown-toggle.btn-filter {
-  color: #000;
-  background-color: transparent;
-  border-color: transparent;
+  color: #333;
+  font-weight: 600;
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
