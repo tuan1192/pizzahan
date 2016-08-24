@@ -118,6 +118,14 @@ img.full-width {
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
+.h__Event__dobody{
+  background: url(./img/picjumbo.com_HNCK5108.jpg);
+  background-size: cover;
+}
+.h__Event__dobody h1.title{
+  padding: 100px 0 50px 0;
+  color: #fff;
+}
 .form-control:focus {
   border-color: #00b3ff;
   outline: 0;
